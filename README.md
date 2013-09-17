@@ -73,7 +73,7 @@ Writing markup in a javascript file makes the content harder to find, harder to 
 - When grouping selectors, keep individual selectors to a single line
 - Include one space before the opening brace of declaration blocks
 - Place closing braces of declaration blocks on a new line
-- Include one space after : in each property
+- Include one space after `:` in each property
 - Each declaration should appear on its own line
 - End all declarations with a semi-colon
 - Comma-separated values should include a space after each comma
