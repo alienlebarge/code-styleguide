@@ -61,4 +61,48 @@ Use the most recent doctype.
 <a class="" id="" data-modal="" href="">Example link</a>
 ```
 
+## JavaScript generated markup
 
+Writing markup in a javascript file makes the content harder to find, harder to edit, and less performant. Don't do it.
+
+# CSS
+
+## Syntax
+
+- Use soft-tabs with two spaces
+- When grouping selectors, keep individual selectors to a single line
+- Include one space before the opening brace of declaration blocks
+- Place closing braces of declaration blocks on a new line
+- Include one space after : in each property
+- Each declaration should appear on its own line
+- End all declarations with a semi-colon
+- Comma-separated values should include a space after each comma
+- Don't include spaces after commas in RGB or RGBa colors, and don't preface values with a leading zero
+- Lowercase all hex values, e.g., `#fff` instead of `#FFF`
+- Use shorthand hex values where available, e.g., `#fff` instead of `#ffffff`
+- Quote attribute values in selectors, e.g., `input[type="text"]`
+- Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`
+
+**Incorrect example:**
+
+```css
+.selector, .selector-secondary, .selector[type=text] {
+  padding:15px;
+  margin:0px 0px 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+  box-shadow:0 1px 2px #CCC,inset 0 1px 0 #FFFFFF
+}
+```
+
+**Correct example:**
+
+```css
+.selector,
+.selector-secondary,
+.selector[type="text"] {
+  padding: 15px;
+  margin: 0 0 15px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+```
