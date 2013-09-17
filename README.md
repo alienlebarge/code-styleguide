@@ -46,13 +46,19 @@ Inspiration come from [code-guide](https://github.com/mdo/code-guide), [CSS-Guid
 </html>
 ```
 
+## Doctype
+
+Use the most recent doctype.
+
 ## Attribute order
 
 1. `class`
-2. `id`
-3. `data-*`
-4. `for` /  `type` /  `href`
+1. `id`
+1. `data-*`
+1. `for` /  `type` /  `href`
 
 ```html
 <a class="" id="" data-modal="" href="">Example link</a>
 ```
+
+
