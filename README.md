@@ -63,6 +63,31 @@ Use the most recent doctype.
 <a class="" id="" data-modal="" href="">Example link</a>
 ```
 
+## Comments
+
+When working on big HTML files, it's a good practice to add some comments especially to know where are the closing tags.
+Opening comments are one line before the opening tag. Closing comments start with a `/` and are on the same line, juste after the closing tag.
+Comments follow [Emmets attribute operator](http://docs.emmet.io/abbreviations/syntax/#attribute-operators) coding style.
+
+- `<div id="content">`: `<!-- #content -->`
+- `<div class="my-class">`: `<!-- .my-class -->`
+- `<form class="search">`: `<!-- .search -->`
+
+```html
+<!-- [role=main] -->
+<div role="main">
+
+  <!-- .row -->
+  <div class="row">
+    <!-- .pull-right -->
+    <figure class="pull-right"-->
+      ...
+    </figure><!-- /.pull-right -->
+  </div><!-- /.row -->
+
+<!-- /[role=main] -->
+```
+
 ## JavaScript generated markup
 
 Writing markup in a javascript file makes the content harder to find, harder to edit, and less performant. Don't do it.
