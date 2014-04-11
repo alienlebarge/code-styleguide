@@ -52,10 +52,12 @@ Use the most recent doctype.
 
 ## Attribute order
 
-1. `class`
-1. `id`
-1. `data-*`
-1. `for` /  `type` /  `href`
+- `class`
+- `id`, `name`
+- `data-*`
+- `src`, `for`, `type`, `href`
+- `title`, `alt`
+- `aria-*`, `role`
 
 ```html
 <a class="" id="" data-modal="" href="">Example link</a>
